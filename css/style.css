@@ -1,0 +1,32 @@
+@import url(layout.css);
+:root {
+  /* Colors */
+  --primary-color: #ff9800;
+  --secondary-color: #009688;
+  --text-color: #333333;
+  --bg-color: #f5f5f5;
+
+  /* Spacing */
+
+  --space-xl: 6rem;
+  --space-lg: 4rem;
+  --space-md: 2rem;
+  --space-Sm: 1rem;
+  --space-xs: 0.5rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* ****************************** */
+/* Header or Navigation Section */
+/* ************************** */
+.nav-brand {
+  width: 4rem;
+}
+body {
+  background-color: yellow;
+}
