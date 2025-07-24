@@ -1,3 +1,39 @@
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-brand-wrapper{
+    display: flex;
+    border:3px solid red;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.nav-text{
+    color: var(--text-color);
+}
+
+.nav-bar  {
+    display: flex;
+    gap:2;
+    justify-content: space-between;
+    border:3px solid green;
+    width:800px;
+
+}
+
+/* ************************ */
+/* Mobile Responsive Desing */
+/* ************************ */
+
+
+/* ************************ */
+/* Media Queries for Large Screens */
+/* ************************ */
+
+
+
 /* layout.css (Layout + Components)
 
 Write grid, flexbox, header, footer, and recipe-card styles here.
