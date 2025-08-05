@@ -27,8 +27,9 @@ body {
 .nav-brand {
   width: 4rem;
 }
-/* body {
-
-  background-color: yellow;
-
-} */
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

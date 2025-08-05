@@ -1,38 +1,58 @@
-
+/* Navbar for dekstop */
+/* 
 .nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-.nav-brand-wrapper{
-    display: flex;
-    border:3px solid red;
-    gap:0.5rem;
-    justify-content: center;
-    align-items: center;
+.nav-brand-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
-.nav-text{
-    color: var(--text-color);
+.nav-text {
+  color: var(--text-color);
 }
 
-.nav-bar  {
-    display: flex;
-    gap:2;
-    justify-content: space-between;
-    border:3px solid green;
-    width:800px;
-
-}
+.nav-bar {
+  display: flex;
+  gap: 2;
+  justify-content: space-between;
+  width: 800px;
+} */
 
 /* ************************ */
 /* Mobile Responsive Desing */
 /* ************************ */
 
-
+/* **** */
+/* Hero Secction */
+/* *** */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.hero-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-heading {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.text {
+  font-size: 1.1rem;
+}
+.hero-img {
+  height: 20rem;
+  width: 18rem;
+}
 /* ************************ */
 /* Media Queries for Large Screens */
 /* ************************ */
-
-
 
 /* layout.css (Layout + Components)
 
