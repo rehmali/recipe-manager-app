@@ -22,9 +22,21 @@
 } */
 
 /* ************************ */
-/* Mobile Responsive Desing */
+/* Mobile First Desing */
 /* ************************ */
 
+/* General */
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+.recipe-card-container .recipe-card {
+  text-align: center;
+}
 /* **** */
 /* Hero Secction */
 /* *** */
@@ -32,12 +44,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .hero-text-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .hero-heading {
   font-size: 1.5rem;
@@ -50,10 +63,138 @@
   height: 20rem;
   width: 18rem;
 }
+/* ************* */
+/*  Popular Recipes Cards*/
+/* *************** */
+.popular-recipes .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+}
+.popular-recipes .text-wrapper .btn {
+  align-self: center;
+}
+
+.recipe-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm); /* Optional: spacing between multiple cards */
+}
+
+.recipe-card {
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+.recipe-card-img {
+  width: 100%;
+  height: 250px;
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.serving-details {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.serving-details .cooking-time,
+.serving-details .servings,
+.serving-details .difficulty {
+  color: green;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.dish-name {
+  font-size: 1.7rem;
+}
+
+/* ************************ */
+/*Section From Our Community  */
+/* ************************ */
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* object-fit: cover; */
+}
+.community-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.user-community-card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+.user-comment-text {
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 10px;
+}
+.community-dish-image {
+  height: 260px;
+}
+
+/* ***************** */
+/**** Footer Menu*****/
+/* ***************** */
+
+.wrapper-sign-up-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.wrapper-sign-up-text h3 {
+  font-size: 1rem;
+}
+.wrapper-sign-up-text img {
+  display: block; /* remove bottom whitespace */
+  height: 2rem; /* adjust height to match h3 better */
+  width: auto; /* maintain aspect ratio */
+}
+input[type="text"] {
+  padding: 8px;
+}
+.btn-sign-up {
+  padding: 8px 16px;
+}
 /* ************************ */
 /* Media Queries for Large Screens */
 /* ************************ */
+@media screen and (min-width: 480px) {
+}
 
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
 /* layout.css (Layout + Components)
 
 Write grid, flexbox, header, footer, and recipe-card styles here.
