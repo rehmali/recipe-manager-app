@@ -181,13 +181,132 @@ input[type="text"] {
 /* ************************ */
 /* Media Queries for Large Screens */
 /* ************************ */
-@media screen and (min-width: 480px) {
-}
-
 @media screen and (min-width: 600px) {
+  /* General */
+  .container {
+    margin-left: 1rem;
+    width: 600px;
+  }
+  /* Navbar */
+  .nav .container {
+    display: flex;
+  }
+  .nav-brand-wrapper {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  .nav-text {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    padding-top: 10px;
+  }
+  .nav-brand {
+    height: 2.7rem;
+  }
+  .nav-bar {
+    display: flex;
+    gap: 0.7rem;
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 500px;
+    font-size: 1.2rem;
+  }
+  /* Hero Section */
+  .hero-section .container {
+    display: flex;
+    align-items: center;
+  }
+  .hero-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+  .hero-heading {
+    text-align: left;
+  }
+  .hero-text {
+    text-align: left;
+  }
+
+  /* Popular Recipis Cards */
+  .popular-recipes .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--space-md);
+    gap: 0.5rem;
+  }
+  .popular-recipes .text-wrapper .btn {
+    align-self: center;
+  }
+
+  .recipe-card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .recipe-card {
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 260px;
+  }
+  /* From Community */
+  .community-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .user-community-card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .user-comment-text {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .community-dish-image {
+    height: 260px;
+  }
+  /* Footer Section */
+
+  .wrapper-sign-up-text {
+    gap: 2rem;
+  }
+  .wrapper-sign-up-text h3 {
+    font-size: 1.7rem;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+  }
+  .btn-sign-up {
+    padding: 10px 20px;
+  }
+  .sign-up-form {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  /* general formatting */
+  .container {
+    width: 760px;
+  }
 }
 
 @media screen and (min-width: 992px) {
