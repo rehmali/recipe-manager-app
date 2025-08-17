@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (recipeSubmitBTN) {
       recipeSubmitBTN.addEventListener("click", (e) => {
         e.preventDefault();
-        s;
+
         updateArray();
         displayRecipes();
       });
