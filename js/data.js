@@ -1,16 +1,35 @@
-// (your recipes array & data management)
-/*
+import { recipe } from "./dom.js";
+import { displayRecipes } from "./utils.js";
 
-1. Recipe Cards (Popular Recipes Section)
-Practice:
+const userRecipies = [];
 
-Create an array of recipe objects with properties like title, time, servings, difficulty, imageURL.
+// Adds Recipe Object Data in Array
+const updateArray = function () {
+  // get latest image from user
+  const file = recipe.recipeImageURL.files[0];
+  const imageURL = file
+    ? URL.createObjectURL(file)
+    : "assets/images/default.jpg";
 
-Use JS to dynamically generate cards from the array instead of writing them manually.
+  if (
+    recipe.userDish.value === "" ||
+    recipe.cookingTime.value === "" ||
+    recipe.servings.value === "" ||
+    recipe.difficulty.value === ""
+  ) {
+    alert("All fields are required");
+  } else {
+    // Pushes data in Array as Objects
+    userRecipies.push({
+      userDish: recipe.userDish.value,
+      cookingTime: recipe.cookingTime.value,
+      serving: recipe.servings.value,
+      difficulty: recipe.difficulty.value,
+      imgURL: imageURL,
+    });
+    displayRecipes();
+  }
+};
 
-Add sorting or filtering functionality (e.g., filter by difficulty or cooking time).
-*/
-
-import { recipe } from "./dom.s";
-
-console.log(recipe);
+// exports data for other modules
+export { updateArray, userRecipies };

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Make Recipis for Cooking Online" />
+    <meta name="keyword" content="recipi, add, delete," />
+    <meta name="Author" content="Rehm Ali" />
+    <meta name="description" content="Creat your recipes" />
+
+    <title>Your Recipes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-user-recipes">
+    <main class="user-recipis-main">
+      <div class="user-recipis">
+        <div class="recipes">
+          <div class="container user-recipes-container">
+            <button type="button" class="btn btn-add-recipi active">
+              Add Recipi
+            </button>
+            <div class="recipe-card-container user-recipes-card-container">
+              <!-- <div class="recipe-card">
+              <div class="image-wrapper">
+                <img
+                  class="recipe-card-img"
+                  src="assets/images/img2-bistrot-food.avif"
+                  alt="Bistrot Food"
+                />
+                <p class="serving-details">
+                  <span class="cooking-time">15 Mins</span>
+                  <span class="servings">3 Servings</span>
+                  <span class="difficulty">Easy</span>
+                </p>
+              </div>
+              <h2 class="dish-name">Bistrot Food</h2>
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- THis will be a modal  -->
+      <div class="user-form hidden">
+        <div class="container">
+          <button type="button" class="modal-close">&times;</button>
+          <form action="" method="POST">
+            <h3 class="heading-add-recipi">Add Your Recipe</h3>
+            <div class="input-wrapper">
+              <label for="recipi-name" class="input-lable-text">
+                Dish Name</label
+              >
+              <input
+                type="text"
+                placeholder="Enter Recipi"
+                autocomplete=""
+                id="recipi-name"
+                required
+                class="input-field user-dish-name"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="cooking-time" class="input-lable-text"
+                >Cooking time</label
+              >
+              <input
+                type="text"
+                id="cooking-time"
+                maxlength="8"
+                class="input-field user-cooking-time"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="servings" class="input-lable-text">Servings</label>
+              <input
+                type="text"
+                id="servings"
+                class="input-field user-servings"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="difficulty" class="input-lable-text"
+                >Difficulty</label
+              >
+              <select
+                required
+                class="input-field input-field-select"
+                id="difficulty"
+              >
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Difficult</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="image-upload" class="input-lable-text"
+                >Add image</label
+              >
+              <input
+                type="file"
+                accept="image/*"
+                class="input-field"
+                id="image-upload"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <button type="button" class="btn btn-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

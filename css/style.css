@@ -73,3 +73,8 @@ a:hover,
 input[type="text"]:focus {
   background-color: var(--bg-color);
 }
+
+/* stars user  */
+.rating {
+  color: var(--primary-color);
+}

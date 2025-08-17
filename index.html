@@ -8,10 +8,14 @@
 
     <meta name="author" content="Rehm Ali" />
     <title>RecipiDelicia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="page-home">
     <header>
       <div class="nav" role="navigation">
         <div class="container">
@@ -27,7 +31,9 @@
           <nav class="navigation">
             <ul class="nav-bar">
               <li><a href="#" class="nav-item">Home</a></li>
-              <li><a href="#" class="nav-item">Your Recipis</a></li>
+              <li>
+                <a href="your-recipes.html" class="nav-item">Your Recipis</a>
+              </li>
               <li><a href="#" class="nav-item">World Recipis</a></li>
               <li><a href="#" class="nav-item">About</a></li>
             </ul>
@@ -225,7 +231,14 @@
                 </div>
               </div>
 
-              <div class="rating">⭐⭐⭐⭐☆</div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
               <p class="user-comment-text">
                 I tried this Italian pasta recipe last night and it turned out
                 amazing! The flavors were rich and authentic, just like
@@ -255,7 +268,13 @@
                 </div>
               </div>
 
-              <div class="rating">⭐⭐⭐⭐☆</div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
               <p class="user-comment-text">
                 I made this rice bowl recipe yesterday and it was absolutely
                 delicious! The combination of fresh veggies, perfectly cooked
@@ -333,6 +352,7 @@
                 type="text"
                 placeholder="Enter Your email address"
                 autocomplete=""
+                id="sign-up-email"
               />
               <button type="submitn" class="btn btn-sign-up">Submit</button>
             </form>
